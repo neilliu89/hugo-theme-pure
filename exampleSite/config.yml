@@ -73,7 +73,7 @@ params:
   # Icon Reference: http://blog.cofess.com/hexo-theme-pure/iconfont/demo_fontclass.html
   enableMathJax: true #Enable mathjax support, to use mathematical notations
   highlightjs:
-    langs: ["python", "javascript"] # refer to http://staticfile.org/, search highlight.js, already have highlight.min.js
+    langs: ["python", "javascript", "golang"] # refer to http://staticfile.org/, search highlight.js, already have highlight.min.js
 
   # Allows you to specify an override stylesheet
   # put custom.css in $hugo_root_dir/static/
@@ -95,19 +95,20 @@ params:
     enabled: true # Whether to show profile bar
     avatar: avatar.png
     gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-    author: xiaoheiAh
+    author: neilliu
     author_title: author title
-    author_description: Good Good Study, Day Day Up~
-    location: Shanghai, China
-    follow: https://github.com/xiaoheiAh
+    author_description: talk is cheap, show me code.
+    location: Tianjin, China
+    follow: https://github.com/neilliu89
     # Social Links
     social:
       links:
-        github: https://github.com/xiaoheiAh
+        github: https://github.com/neilliu89
+        gitee: https://gitee.com/ly16
         # weibo: http://weibo.com/{yourid}
         # twitter: https://twitter.com/
         # facebook: /
-        rss: /index.xml
+        # rss: /index.xml
       link_tooltip: false # enable the social link tooltip, options: true, false
   # Site
   site:
@@ -116,9 +117,9 @@ params:
       width: 40
       height: 40
       url: favicon.ico
-    title: Hugo # 页面title
+    title: Neil'Home # 页面title
     favicon: favicon.ico
-    board: <p>enjoy~</p> # 公告牌
+    board: <p>你不想说点儿什么在走吗~</p> # 公告牌
 
   # Share
   # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
@@ -129,8 +130,8 @@ params:
 
   # Comment
   comment:
-    type:  # type disqus/gitalk/valine 启用哪种评论系统
-    disqus: your_disqus_name # enter disqus shortname here
+    type: disqus # type disqus/gitalk/valine 启用哪种评论系统
+    disqus: neil # enter disqus shortname here
     gitalk: # gitalk. https://gitalk.github.io/
       owner: #必须. GitHub repository 所有者，可以是个人或者组织。
       admin: #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
@@ -150,14 +151,14 @@ params:
 
   # Donate
   donate:
-    enable: false
+    enable: true
     # 微信打赏
     wechatpay:
-      qrcode: donate/wechatpayimg.png
+      qrcode: donate/wechatpayimg.jpeg
       title: 微信支付
     # 支付宝打赏
     alipay:
-      qrcode: donate/alipayimg.png
+      qrcode: donate/alipayimg.jpeg
       title: 支付宝
 
   # PV
@@ -177,7 +178,7 @@ params:
 
   # config
   config:
-    skin: theme-black # theme color default is white. other type [theme-black,theme-blue,theme-green,theme-purple]
+    skin: theme-purple # theme color default is white. other type [theme-black,theme-blue,theme-green,theme-purple]
     layout: main-center # main-left main-center main-right
     excerpt_link: Read More
     toc: true
